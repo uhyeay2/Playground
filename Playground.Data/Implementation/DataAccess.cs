@@ -59,7 +59,7 @@ namespace Playground.Data.Implementation
 
                 _logger.LogInfo($"Sending IDataRequest to database", requestName);
 
-                _logger.LogTrace($"IDataRequest Details", new 
+                _logger.LogDebug($"IDataRequest Details", new 
                 { 
                     RequestType = requestName, 
                     Sql = request.GetSql(), 
@@ -72,7 +72,7 @@ namespace Playground.Data.Implementation
 
                 _logger.LogInfo("Received IDataRequest Result", responseType.Name);
 
-                _logger.LogTrace("IDataRequest Result Details", new
+                _logger.LogDebug("IDataRequest Result Details", new
                 {
                     Type = responseType.Name,
                     Value = result
@@ -119,7 +119,7 @@ namespace Playground.Data.Implementation
 
                 _logger.LogInfo($"Sending IDataRequest to database", requestName);
 
-                _logger.LogTrace($"IDataRequest Details", new
+                _logger.LogDebug($"IDataRequest Details", new
                 {
                     RequestType = requestName,
                     Sql = request.GetSql(),
@@ -132,7 +132,7 @@ namespace Playground.Data.Implementation
 
                 _logger.LogInfo("Received IDataRequest Result", responseType);
 
-                _logger.LogTrace("IDataRequest Result Details", new
+                _logger.LogDebug("IDataRequest Result Details", new
                 {
                     Type = responseType,
                     Value = result
